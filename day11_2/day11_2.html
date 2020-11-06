@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #lstBook .book{
+            border: 1px solid red;
+        }
+        #lstBook{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="console.log('hello')"></button>
+    <script>console.log('hello')</script>
+    <script src="test.js"></script>
+    <!-- ul#lstBook>li*4 -->
+    <ul id="lstBook">
+        <li>java</li>
+        <li class="book">android</li>
+        <li>python</li>
+        <li class="book">js</li>
+       
+    </ul>
+    <script>
+        // const a=document.querySelector('#lstBook')
+        // console.log(a.innerHTML)
+        // console.log(a.nodeType)
+        // console.log(a.nodeName)
+        // console.log(a.nodeValue)
+        // console.log(a.firstChild.nodeValue)
+        // console.log(a.firstElementChild.nodeType)
+        // console.log(document.doctype.nextSibling.firstElementChild.innerHTML)//<head>..</>
+        // console.log(document.doctype.nextSibling.firstElementChild.nextSibling.innerHTML)
+        // console.log(document.documentElement.nodeName)
+        // console.log(document.body.nodeName)//body
+        // //查找指定列表的内容
+        // const b=document.getElementById('lstBook')
+        // console.log(b)
+        // //查看li的个数
+        // const c=document.getElementsByTagName('li')
+        // console.log(c.length)
+        // const book=document.getElementsByClassName('book')
+        // console.log(book.length)
+
+        // b.removeChild(b.lastChild)
+        // console.log(c.length)
+
+
+
+        //查找内容
+        // const oList=document.querySelector('#lstBook .book')//先定位
+        // console.log(oList.innerHTML)//打印出内容
+        // const oLists=document.querySelectorAll('#lstBook')
+        // console.log(oLists.length)
+//删除
+        // const oList1=document.querySelector('#lstBook')
+        // oList1.removeChild(document.querySelector("#lstBook :nth-chin(3)"))
+        // console.log(oList1.innerHTML)
+
+        const oList1=document.querySelector('#lstBook')
+        
+
+    </script>
+</body>
+</html>

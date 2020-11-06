@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="book">
+        <li>java</li>
+        <li>js</li>
+        <li>python</li>
+        <li>android</li>
+    </ul>
+    <script>
+        const book=document.querySelector("#book")
+        //第一种方法
+        // book.setAttribute("style","border:1px red solid")
+        //第二种方法
+        // book.style.color="red"
+        // book.style.backgroundColor="blue"
+        // book.style.borderStyle="dotted"
+        // book.style.cssFloat="right"
+        book.setAttribute("style","border:1px red solid")
+        console.log(book.style.border)
+
+    </script>
+</body>
+</html>

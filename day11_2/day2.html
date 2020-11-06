@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #lstBook{
+        color:red
+    }
+</style>
+<body>
+    <script>
+        const oElement=document.createElement('ul')
+        oElement.setAttribute('id',"lstBook")
+        document.body.appendChild(oElement)
+
+        const oItem1=document.createElement('li')
+        oItem1.setAttribute('class',"book")
+        document.appendChild(oItem1)
+        const oText1=document.createTextNode(javaScript)
+        oItem1.appendChild(oText1)
+
+        const oItem2=document.createTextNode('li')
+        oElement.appendChild(oItem2)
+        const oText2=document.createTextNode(python)
+        oItem2.appendChild(oText2)
+
+        const oItem3=document.createElement('li')
+        document.appendChild(oItem3)
+        const oText3=document.createTextNode(js)
+        oItem3.appendChild(oText3)
+
+        const oItem4=document.createElement('li')
+        document.appendChild(oItem4)
+        const oText4=document.createTextNode(java)
+        oItem4.appendChild(oText4)
+
+
+
+
+
+    
+
+    </script>
+</body>
+</html>
