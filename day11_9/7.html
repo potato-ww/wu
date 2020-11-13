@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// 最简单粗暴
+        let strHTML=`<ul>
+        <li>java</li>
+        <li>js</li>
+        <li>an</li>
+        <li>python</li>
+    </ul>`
+    document.body.innerHTML=strHTML
+    const oList=document.querySelector('ul')
+    console.log(oList.innerHTML)
+
+    //古老的方式
+    const oFrage=document.createDocumentFragment()
+    let a=document.createElement('ul')
+    const createElement=(element,text)=>{
+        let b=document.createElement(element)
+        let c=document.createTextNode(text)
+        b.appendChild(c)
+        a.appendChild(b)
+    }
+    createElement('li','java')
+    createElement('li','js')
+    createElement('li','an')
+    createElement('li','python')
+    oFrage.appendChild(a)
+    document.body.appendChild(oFrage)
+
+    </script>
+</body>
+</html>

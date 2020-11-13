@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>java</li>
+        <li>python</li>
+    </ul>
+    <input type="text" id="text"/>
+    <button id="add">+</button>
+    <button id="remove">-</button>
+    <script>
+        const oList=document.querySelector('ul')
+        document.querySelector('#add').addEventListener('click',()=>{
+            let text=document.querySelector('#text').value
+            let oe=document.createElement('li')
+            oe.textContent=text
+            oList.appendChild(oe)
+            document.querySelector("#text").value = ''
+            if(oList.childElementCount>0){
+                document.querySelector('#remove').classList.remove('p1')
+            }
+        
+
+        })
+        document.querySelector('#remove').addEventListener('click',()=>{
+            oList.removeChild(oList.lastElementChild)
+            if(oList.childElementCount==0){
+                document.querySelector('#remove').classList.toggle('p1')
+            }
+        })
+    </script>
+</body>
+</html>

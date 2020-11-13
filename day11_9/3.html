@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="myDiv"  class="text1">
+        <p id="a">test</p>
+    </div>
+    <script>
+        const oDiv1=document.getElementById("myDiv")
+        const oDiv=document.getElementsByName("div1")
+        const oDiv2=document.getElementsByClassName("text1")
+        const oDiv3=document.getElementsByTagName("div")
+        const oDiv4=document.querySelector("#myDiv")
+        const oDiv5=document.querySelectorAll("#myDiv")
+        const a=oDiv1.querySelector('#a')
+        console.log(oDiv,oDiv1,oDiv3,oDiv4,oDiv5,oDiv2,a)
+    </script>
+</body>
+</html>
